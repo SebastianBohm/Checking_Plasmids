@@ -12,8 +12,8 @@ library(reshape2)
 library(Biostrings)  
 
 # Load sequences from FASTA files
-file1 <- "C:/Users/Sebastian Böhm/Downloads/new - Copy.fa"
-file2 <- "C:/Users/Sebastian Böhm/Downloads/old - Copy.fa"
+file1 <- "XXX"
+file2 <- "XXX"
 
 seq1 <- readDNAStringSet(file1)
 seq2 <- readDNAStringSet(file2)
@@ -41,7 +41,7 @@ plot <- ggplot(alignment_melt, aes(x = variable, y = Sequence, fill = value)) +
   labs(title = "Sequence Alignment", x = "Position", y = "Sequence")
 
 # Save the plot as a JPG file
-output_plot_filepath <- "C:/Users/Sebastian Böhm/Downloads/alignment_plot_NEW.jpg"
+output_plot_filepath <- "XXXX.jpg"
 ggsave(output_plot_filepath, plot = plot, width = 10, height = 5, dpi = 300)
 
 # Highlight mismatches in the alignment plot
